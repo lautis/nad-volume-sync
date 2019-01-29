@@ -1,0 +1,17 @@
+[package]
+name = "nad-volume-sync"
+description = "Sync volume of a NAD receiver with an ALSA mixer"
+version = "0.1.0"
+license = "MIT"
+authors = ["Ville Lautanala <lautis@gmail.com>"]
+repository = "https://github.com/lautis/volume-control"
+keywords = ["volume", "alsa", "nad"]
+
+[dependencies]
+alsa = "0.2.*"
+nom = "^4.2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+panic = "abort"
