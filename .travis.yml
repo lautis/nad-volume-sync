@@ -9,6 +9,11 @@ cache: cargo
 before_cache:
   - chmod -R a+r $HOME/.cargo
 
+addons:
+  apt:
+    packages:
+      - libasound2-dev
+
 env:
   global:
     - CRATE_NAME=nad-volume-control
