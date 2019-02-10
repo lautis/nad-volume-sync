@@ -19,7 +19,7 @@ matrix:
     - env: TARGET=x86_64-unknown-linux-gnu
 
 before_install:
-  - set -ec
+  - set -e
   - rustup self update
 
 install:
